@@ -3,4 +3,22 @@
   #navMain .container {
     background: rgba(0, 0, 0, 0.5); }
 
+body {
+  color: #5d5d5d; }
+
+#bbHome {
+  color: #fff;
+  background-image: url("../imgs/bouquet.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+  #bbHome > .row {
+    background-color: rgba(0, 0, 0, 0.5); }
+  #bbHome #bbHomeOrderButton a {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+    cursor: pointer; }
+
 /*# sourceMappingURL=style.css.map */

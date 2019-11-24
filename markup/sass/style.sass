@@ -1,5 +1,7 @@
 //	Contents
-//	a. bbHome
+//	a. Variables
+//	b. Common styles
+//	c. bbHome
 
 
 #navMain
@@ -8,4 +10,27 @@
 		background: rgba(0,0,0,.5)
 		
 
-//a. bbHome
+//	a. Variables
+$fontDark: #000
+$fontMiddle: #5d5d5d
+$fontLight: #fff
+
+//	b. Common styles
+body
+	color: $fontMiddle
+
+//	c. bbHome
+#bbHome
+	color: $fontLight
+	background-image: url("../imgs/bouquet.png")
+	background-position: center
+	background-repeat: no-repeat
+	background-size: contain
+	>.row
+		background-color: rgba(0,0,0,.5)
+	#bbHomeOrderButton a
+		display: inline-block
+		background-color: $fontLight
+		color: $fontDark
+		text-transform: uppercase
+		cursor: pointer
