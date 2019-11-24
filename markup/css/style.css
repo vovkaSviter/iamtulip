@@ -14,11 +14,12 @@ body {
   background-size: contain; }
   #bbHome > .row {
     background-color: rgba(0, 0, 0, 0.5); }
+    #bbHome > .row #bbHomeScrollButton {
+      cursor: pointer; }
   #bbHome #bbHomeOrderButton a {
     display: inline-block;
     background-color: #fff;
     color: #000;
-    text-transform: uppercase;
     cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
