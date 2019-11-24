@@ -1,21 +1,28 @@
-//	Contents
+//	Contents //////////////////////////////////////////////////////////////////////////////////
+
 //	a. Variables
 //	b. Common styles
 //	c. Home
 //	d. navMain
 
-/*********************************************************************************************/
 
-//	a. Variables
+
+//	a. Variables/Placeholders //////////////////////////////////////////////////////////////////////////////
 $fontDark: #000
 $fontMiddle: #5d5d5d
 $fontLight: #fff
 
-//	b. Common styles
+%pseudo-el-bl-abs
+	content: ''
+	display: block
+	position: absolute
+
+
+//	b. Common styles //////////////////////////////////////////////////////////////////////////
 body
 	color: $fontMiddle
 
-//	c. Home
+//	c. Home ///////////////////////////////////////////////////////////////////////////////////
 #bbHome
 	color: $fontLight
 	background-image: url("../imgs/bouquet.png")
@@ -35,7 +42,7 @@ body
 		color: $fontDark
 		cursor: pointer
 	
-//	d. navMain
+//	d. navMain /////////////////////////////////////////////////////////////////////////////////
 #navMain
 	color: $fontLight
 	background-color: rgba(0,0,0,.75)
@@ -49,7 +56,46 @@ body
 		&.active
 			border-bottom: dotted $fontMiddle 1px
 			
-
+#sandwich
+	span[data-layer="outer"]
+		display: inline-block
+		width: 36px
+		&:before
+			@extend %pseudo-el-bl-abs
+			width: 100%
+			height: 1px
+			background-color: $fontLight
+			top: 0
+			right: 0
+			transform-origin: 100% 0
+		&:after
+			@extend %pseudo-el-bl-abs
+			width: 75%
+			height: 2px
+			background-color: $fontLight
+			bottom: 0
+			right: 0
+			transform-origin: 100% 100%
+		span
+			width: 50%
+			height: 1px
+			background-color: $fontLight
+			top: calc(50% - 1px)
+			right: 0
+		
+		&.active
+			&:before
+				transform: rotate(-45deg)
+				width: 90%
+			&:after
+				transform: rotate(45deg)
+				width: 90%
+				height: 1px
+			span
+				visibility: hidden
+			
+			
+			
 
 
 

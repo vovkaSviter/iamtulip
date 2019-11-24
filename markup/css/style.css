@@ -1,4 +1,8 @@
-/******************************************************************************************** */
+#sandwich span[data-layer="outer"]:before, #sandwich span[data-layer="outer"]:after {
+  content: "";
+  display: block;
+  position: absolute; }
+
 body {
   color: #5d5d5d; }
 
@@ -29,5 +33,38 @@ body {
       text-decoration: none; }
     #navMain a.active {
       border-bottom: dotted #5d5d5d 1px; }
+
+#sandwich span[data-layer="outer"] {
+  display: inline-block;
+  width: 36px; }
+  #sandwich span[data-layer="outer"]:before {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    transform-origin: 100% 0; }
+  #sandwich span[data-layer="outer"]:after {
+    width: 75%;
+    height: 2px;
+    background-color: #fff;
+    bottom: 0;
+    right: 0;
+    transform-origin: 100% 100%; }
+  #sandwich span[data-layer="outer"] span {
+    width: 50%;
+    height: 1px;
+    background-color: #fff;
+    top: calc(50% - 1px);
+    right: 0; }
+  #sandwich span[data-layer="outer"].active:before {
+    transform: rotate(-45deg);
+    width: 90%; }
+  #sandwich span[data-layer="outer"].active:after {
+    transform: rotate(45deg);
+    width: 90%;
+    height: 1px; }
+  #sandwich span[data-layer="outer"].active span {
+    visibility: hidden; }
 
 /*# sourceMappingURL=style.css.map */
