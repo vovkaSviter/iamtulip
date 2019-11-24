@@ -1,14 +1,10 @@
 //	Contents
 //	a. Variables
 //	b. Common styles
-//	c. bbHome
+//	c. Home
+//	d. navMain
 
-
-#navMain
-	background: rgba(0,0,0,.25)
-	.container
-		background: rgba(0,0,0,.5)
-		
+/*********************************************************************************************/
 
 //	a. Variables
 $fontDark: #000
@@ -19,7 +15,7 @@ $fontLight: #fff
 body
 	color: $fontMiddle
 
-//	c. bbHome
+//	c. Home
 #bbHome
 	color: $fontLight
 	background-image: url("../imgs/bouquet.png")
@@ -39,4 +35,21 @@ body
 		color: $fontDark
 		cursor: pointer
 	
+//	d. navMain
+#navMain
+	color: $fontLight
+	background-color: rgba(0,0,0,.75)
 	
+	a
+		color: $fontLight
+		display: inline-block
+		&:hover
+			color: $fontMiddle
+			text-decoration: none
+		&.active
+			border-bottom: dotted $fontMiddle 1px
+			
+
+
+
+

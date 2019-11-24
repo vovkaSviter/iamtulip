@@ -1,8 +1,4 @@
-#navMain {
-  background: rgba(0, 0, 0, 0.25); }
-  #navMain .container {
-    background: rgba(0, 0, 0, 0.5); }
-
+/******************************************************************************************** */
 body {
   color: #5d5d5d; }
 
@@ -21,5 +17,17 @@ body {
     background-color: #fff;
     color: #000;
     cursor: pointer; }
+
+#navMain {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.75); }
+  #navMain a {
+    color: #fff;
+    display: inline-block; }
+    #navMain a:hover {
+      color: #5d5d5d;
+      text-decoration: none; }
+    #navMain a.active {
+      border-bottom: dotted #5d5d5d 1px; }
 
 /*# sourceMappingURL=style.css.map */
