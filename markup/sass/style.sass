@@ -49,7 +49,6 @@ body
 	
 	a
 		color: $fontLight
-		display: inline-block
 		&:hover
 			color: $fontMiddle
 			text-decoration: none
@@ -94,8 +93,20 @@ body
 			span
 				visibility: hidden
 			
-			
-			
+#navXS
+	position: absolute
+	top: 0
+	left: 0
+	display: none
+	background-color: rgba(0,0,0,.85)
+	&.active
+		display: block
+	
+	a
+		color: $fontLight
+		&:hover
+			color: $fontMiddle
+			text-decoration: none
 
 
 

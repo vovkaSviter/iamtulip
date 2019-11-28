@@ -26,8 +26,7 @@ body {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.75); }
   #navMain a {
-    color: #fff;
-    display: inline-block; }
+    color: #fff; }
     #navMain a:hover {
       color: #5d5d5d;
       text-decoration: none; }
@@ -66,5 +65,19 @@ body {
     height: 1px; }
   #sandwich span[data-layer="outer"].active span {
     visibility: hidden; }
+
+#navXS {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.85); }
+  #navXS.active {
+    display: block; }
+  #navXS a {
+    color: #fff; }
+    #navXS a:hover {
+      color: #5d5d5d;
+      text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
