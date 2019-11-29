@@ -6,11 +6,13 @@
 //	d. nav
 //	e. About
 //	f. bbPrices
-//	g. bbGall
+//	g. bbGallery
 
 
 
-//	a. Variables/Placeholders //////////////////////////////////////////////////////////////////////////////
+
+
+//	a. Variables/Placeholders /////////////////////////////////////////////////////////////////
 $fontDark: #000
 $fontMiddle: #5d5d5d
 $fontLight: #fff
@@ -19,6 +21,11 @@ $fontLight: #fff
 	content: ''
 	display: block
 	position: absolute
+	
+%backgr-img-center
+	background-position: center
+	background-size: contain
+	background-repeat: no-repeat
 
 
 //	b. Common styles //////////////////////////////////////////////////////////////////////////
@@ -119,10 +126,11 @@ h2
 
 #bbAbout
 	background-color: $fontLight
-#aboutDescr
-	h2
-		.maiden
-			color: $fontMiddle
+
+.maidenHeader
+	color: $fontMiddle
+
+#aboutDescr		
 	a
 		background-color: $fontLight
 		color: $fontDark
@@ -139,3 +147,15 @@ h2
 
 //	g. bbGall /////////////////////////////////////////////////////////////////////////////////
 
+#bbGallery
+	.gallItemRegular
+		@extend %backgr-img-center
+		padding-top: 50%
+		cursor: pointer
+		
+	.gallItemExtended
+		@extend %backgr-img-center
+		padding-top: 100%		
+		cursor: pointer
+	
+		

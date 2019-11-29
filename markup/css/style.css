@@ -3,6 +3,11 @@
   display: block;
   position: absolute; }
 
+#bbGallery .gallItemRegular, #bbGallery .gallItemExtended {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
 body {
   color: #5d5d5d; }
 
@@ -86,8 +91,9 @@ h2 {
 #bbAbout {
   background-color: #fff; }
 
-#aboutDescr h2 .maiden {
+.maidenHeader {
   color: #5d5d5d; }
+
 #aboutDescr a {
   background-color: #fff;
   color: #000;
@@ -99,5 +105,12 @@ h2 {
 
 #bbPrices {
   background-color: #dddddd; }
+
+#bbGallery .gallItemRegular {
+  padding-top: 50%;
+  cursor: pointer; }
+#bbGallery .gallItemExtended {
+  padding-top: 100%;
+  cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
