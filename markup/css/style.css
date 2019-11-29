@@ -1,9 +1,9 @@
-#sandwich span[data-layer="outer"]:before, #sandwich span[data-layer="outer"]:after {
+#sandwich span[data-layer="outer"]:before, #sandwich span[data-layer="outer"]:after, #bbGallery .gallItemRegular:hover:after {
   content: "";
   display: block;
   position: absolute; }
 
-#bbGallery .gallItemRegular, #bbGallery .gallItemExtended {
+#bbGallery .gallItemRegular, #bbGallery .gallItemRegular:hover:after, #bbGallery .gallItemExtended {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat; }
@@ -109,8 +109,19 @@ h2 {
 #bbGallery .gallItemRegular {
   padding-top: 50%;
   cursor: pointer; }
+  #bbGallery .gallItemRegular:hover:after {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(../imgs/enlarge.png);
+    background-size: 25%; }
 #bbGallery .gallItemExtended {
   padding-top: 100%;
   cursor: pointer; }
+  #bbGallery .gallItemExtended h5 {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=style.css.map */
