@@ -6,6 +6,9 @@
 body {
   color: #5d5d5d; }
 
+h2 {
+  color: #000; }
+
 #bbHome {
   color: #fff;
   background-image: url("../imgs/bouquet.png");
@@ -93,5 +96,8 @@ body {
     color: #fff;
     background-color: #000;
     text-decoration: none; }
+
+#bbPrices {
+  background-color: #dddddd; }
 
 /*# sourceMappingURL=style.css.map */
