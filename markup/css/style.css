@@ -80,4 +80,18 @@ body {
       color: #5d5d5d;
       text-decoration: none; }
 
+#bbAbout {
+  background-color: #fff; }
+
+#aboutDescr h2 .maiden {
+  color: #5d5d5d; }
+#aboutDescr a {
+  background-color: #fff;
+  color: #000;
+  border: solid 1px #000; }
+  #aboutDescr a:hover {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none; }
+
 /*# sourceMappingURL=style.css.map */
