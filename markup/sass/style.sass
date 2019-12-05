@@ -10,7 +10,7 @@
 //	h. bbOrder
 //	i. bbServ
 //	j. bbNews
-//	k. bbContacts
+//	k. bbFeedback
 //	l. bbMap
 //	m. bbFooter
 
@@ -221,9 +221,40 @@ h2
 			background-color: $fontDark
 			color: $fontLight
 			
-//	k. bbContacts //////////////////////////////////////////////////////////////////////////////
-#bbContacts
-	background-color: lighten($fontDark, 10%)
-#logoContacts
-	background-color: rgba($fontDark, .5)
+//	k. bbFeedback //////////////////////////////////////////////////////////////////////////////
+#bbFeedback
 	color: $fontLight
+	background-color: lighten($fontDark, 10%)
+	
+	.bbFeedbackContacts, .bbFeedbackPages, .bbFeedbackSubscribe
+		position: relative
+		&:after
+			@extend %pseudo-el-bl-abs
+			width: 100%
+			height: 1px
+			left: 0
+			top: 0
+			background-color: $fontMiddle
+			
+		.lead
+			color: $fontMiddle
+		
+	.bbFCItem
+		position: relative
+		&:after
+			@extend %pseudo-el-bl-abs
+			background-position: 0 center
+			background-size: 90%
+			background-repeat: no-repeat
+			top: 0
+			left: 0
+			width: 1.5rem
+			height: 1.5rem
+		&[data-contact-type="address"]:after
+			background-image: url("../imgs/geo.png")
+		&[data-contact-type="hours"]:after
+			background-image: url("../imgs/geo.png")
+		&[data-contact-type="phone"]:after
+			background-image: url("../imgs/geo.png")
+		&[data-contact-type="email"]:after
+			background-image: url("../imgs/geo.png")

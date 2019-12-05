@@ -1,4 +1,4 @@
-#sandwich span[data-layer="outer"]:before, #sandwich span[data-layer="outer"]:after, #bbGallery .gallItemRegular:hover:after {
+#sandwich span[data-layer="outer"]:before, #sandwich span[data-layer="outer"]:after, #bbGallery .gallItemRegular:hover:after, #bbFeedback .bbFeedbackContacts:after, #bbFeedback .bbFeedbackPages:after, #bbFeedback .bbFeedbackSubscribe:after, #bbFeedback .bbFCItem:after {
   content: "";
   display: block;
   position: absolute; }
@@ -157,11 +157,36 @@ h2 {
     background-color: #000;
     color: #fff; }
 
-#bbContacts {
+#bbFeedback {
+  color: #fff;
   background-color: #1a1a1a; }
-
-#logoContacts {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff; }
+  #bbFeedback .bbFeedbackContacts, #bbFeedback .bbFeedbackPages, #bbFeedback .bbFeedbackSubscribe {
+    position: relative; }
+    #bbFeedback .bbFeedbackContacts:after, #bbFeedback .bbFeedbackPages:after, #bbFeedback .bbFeedbackSubscribe:after {
+      width: 100%;
+      height: 1px;
+      left: 0;
+      top: 0;
+      background-color: #5d5d5d; }
+    #bbFeedback .bbFeedbackContacts .lead, #bbFeedback .bbFeedbackPages .lead, #bbFeedback .bbFeedbackSubscribe .lead {
+      color: #5d5d5d; }
+  #bbFeedback .bbFCItem {
+    position: relative; }
+    #bbFeedback .bbFCItem:after {
+      background-position: 0 center;
+      background-size: 90%;
+      background-repeat: no-repeat;
+      top: 0;
+      left: 0;
+      width: 1.5rem;
+      height: 1.5rem; }
+    #bbFeedback .bbFCItem[data-contact-type="address"]:after {
+      background-image: url("../imgs/geo.png"); }
+    #bbFeedback .bbFCItem[data-contact-type="hours"]:after {
+      background-image: url("../imgs/geo.png"); }
+    #bbFeedback .bbFCItem[data-contact-type="phone"]:after {
+      background-image: url("../imgs/geo.png"); }
+    #bbFeedback .bbFCItem[data-contact-type="email"]:after {
+      background-image: url("../imgs/geo.png"); }
 
 /*# sourceMappingURL=style.css.map */
