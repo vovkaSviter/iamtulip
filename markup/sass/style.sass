@@ -30,6 +30,11 @@ $fontLight: #fff
 	background-position: center
 	background-size: contain
 	background-repeat: no-repeat
+	
+%backgr-img-center-cover
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
 
 
 //	b. Common styles //////////////////////////////////////////////////////////////////////////
@@ -270,4 +275,11 @@ input
 			top: 0
 			right: 0
 			cursor: pointer
+
+//	l. bbMap ///////////////////////////////////////////////////////////////////////////////////
+#bbMap
+	height: 25rem
+	@extend %backgr-img-center-cover
+	background-image: url("../imgs/map.jpg")
+
 

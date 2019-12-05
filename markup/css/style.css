@@ -8,6 +8,11 @@
   background-size: contain;
   background-repeat: no-repeat; }
 
+#bbMap {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
 body {
   color: #5d5d5d; }
 
@@ -194,5 +199,9 @@ input {
     top: 0;
     right: 0;
     cursor: pointer; }
+
+#bbMap {
+  height: 25rem;
+  background-image: url("../imgs/map.jpg"); }
 
 /*# sourceMappingURL=style.css.map */
