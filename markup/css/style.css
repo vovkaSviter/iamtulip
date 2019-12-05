@@ -157,4 +157,11 @@ h2 {
     background-color: #000;
     color: #fff; }
 
+#bbContacts {
+  background-color: #1a1a1a; }
+
+#logoContacts {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff; }
+
 /*# sourceMappingURL=style.css.map */
