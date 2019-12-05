@@ -9,7 +9,7 @@
 //	g. bbGallery
 //	h. bbOrder
 //	i. bbServ
-
+//	j. bbNews
 
 
 
@@ -169,7 +169,7 @@ h2
 		@extend %backgr-img-center
 		padding-top: 100%		
 		cursor: pointer
-		h5
+		h6
 			color: $fontLight
 			background-color: rgba($fontDark, .5)
 	
@@ -181,8 +181,11 @@ h2
 //	i. bbServ /////////////////////////////////////////////////////////////////////////////////
 
 #bbServ
+	background-color: lighten($fontMiddle, 50%)
+	
 	img
 		width: 100%
+		height: auto
 		
 	strong
 		color: $fontDark
@@ -192,3 +195,19 @@ h2
 		color: $fontDark
 		&:hover
 			text-decoration: none
+			
+//	j. bbNews /////////////////////////////////////////////////////////////////////////////////
+#bbNews
+	.bbNewsItem
+		.caption
+			background-color: lighten($fontMiddle, 50%)
+			color: $fontDark
+		
+#bbNewsArchiveButton
+	a
+		background-color: $fontLight
+		border: solid 1px $fontDark
+		color: $fontDark
+		&:hover
+			background-color: $fontDark
+			color: $fontLight

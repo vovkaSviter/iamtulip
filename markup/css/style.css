@@ -120,21 +120,36 @@ h2 {
 #bbGallery .gallItemExtended {
   padding-top: 100%;
   cursor: pointer; }
-  #bbGallery .gallItemExtended h5 {
+  #bbGallery .gallItemExtended h6 {
     color: #fff;
     background-color: rgba(0, 0, 0, 0.5); }
 
 #bbOrder {
   background-color: #dddddd; }
 
-#bbServ img {
-  width: 100%; }
-#bbServ strong {
+#bbServ {
+  background-color: #dddddd; }
+  #bbServ img {
+    width: 100%;
+    height: auto; }
+  #bbServ strong {
+    color: #000; }
+  #bbServ a {
+    text-decoration: underline;
+    color: #000; }
+    #bbServ a:hover {
+      text-decoration: none; }
+
+#bbNews .bbNewsItem .caption {
+  background-color: #dddddd;
   color: #000; }
-#bbServ a {
-  text-decoration: underline;
+
+#bbNewsArchiveButton a {
+  background-color: #fff;
+  border: solid 1px #000;
   color: #000; }
-  #bbServ a:hover {
-    text-decoration: none; }
+  #bbNewsArchiveButton a:hover {
+    background-color: #000;
+    color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
