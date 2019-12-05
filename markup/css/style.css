@@ -204,4 +204,14 @@ input {
   height: 25rem;
   background-image: url("../imgs/map.jpg"); }
 
+#bbFooter {
+  color: #fff;
+  background-color: #1a1a1a; }
+  #bbFooter .bbFooterSocial i {
+    cursor: pointer; }
+  #bbFooter #up {
+    background-color: #5d5d5d; }
+  #bbFooter .bbFooterCopy span {
+    color: #5d5d5d; }
+
 /*# sourceMappingURL=style.css.map */
