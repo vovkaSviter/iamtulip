@@ -205,17 +205,17 @@
 						Logo
 					</div>
 					
-					<div class="col-12 col-lg-3 bbFeedbackContacts">
+					<div class="col-12 col-lg-3 position-relative bbFeedbackContacts">
 						<p class="lead text-uppercase">contacts</p>
-						<p class="bbFCItem pl-4" data-contact-type="address">first looong looong looong item</p>
-						<p class="bbFCItem pl-4" data-contact-type="hours">second item</p>
-						<p class="bbFCItem pl-4" data-contact-type="phone">third item</p>
-						<p class="bbFCItem pl-4" data-contact-type="email">fourth item</p>
+						<p class="bbFCItem pl-4 position-relative" data-contact-type="address">first looong looong looong item</p>
+						<p class="bbFCItem pl-4 position-relative" data-contact-type="hours">second item</p>
+						<p class="bbFCItem pl-4 position-relative" data-contact-type="phone">third item</p>
+						<p class="bbFCItem pl-4 position-relative" data-contact-type="email">fourth item</p>
 					</div>
 					
-					<div class="col-12 col-lg-2 bbFeedbackPages">
+					<div class="col-12 col-lg-2 position-relative bbFeedbackPages">
 						<p class="lead text-uppercase">pages</p>
-						<ul>
+						<ul class="pl-4">														<!-- TODO: pl does not match perfectly -->
 							<li class="mb-3">
 								<a href="#" class="text-decoration-none">Privacy policy</a>
 							</li>
@@ -231,8 +231,14 @@
 						</ul>
 					</div>
 					
-					<div class="col-12 col-lg-3 bbFeedbackSubscribe">
+					<div class="col-12 col-lg-3 position-relative bbFeedbackSubscribe">
 						<p class="lead text-uppercase">subscribe</p>
+						<form class="position-relative mb-4">
+							<input id="toSubscribe" type="email" placeholder="Enter your e-mail" class="border-0 p-2">
+							<label for="toSubscribe" class="position-absolute p-2 text-center">O</label>
+						</form>
+						<small class="d-block">Magna fermentum iaculis eu non diam phasellus
+						vestibulum lorem. Vel orci porta non pulvinar neque laoreet suspendisse</block>
 					</div>
 				</div>
 			</div>
@@ -259,7 +265,7 @@
 		</div>
 	</footer>
 
-	<nav id="navXS" class="container-fluid">
+	<nav id="navXS" class="container-fluid position-absolute">
 		<div class="row vh-100 align-items-center pt-5">
 			<a href="#" id="home" class="col-12 d-block h1 text-center text-capitalize text-decoration-none">Home</a>
 			<a href="#" id="about" class="col-12 d-block h1 text-center text-capitalize text-decoration-none">About</a>

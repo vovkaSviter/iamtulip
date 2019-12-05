@@ -38,6 +38,9 @@ body
 	
 h2
 	color: $fontDark
+	
+input
+	outline: none
 
 //	c. Home ///////////////////////////////////////////////////////////////////////////////////
 #bbHome
@@ -110,7 +113,6 @@ h2
 				visibility: hidden
 			
 #navXS
-	position: absolute
 	top: 0
 	left: 0
 	display: none
@@ -222,7 +224,6 @@ h2
 	background-color: lighten($fontDark, 10%)
 	
 	.bbFeedbackContacts, .bbFeedbackPages, .bbFeedbackSubscribe
-		position: relative
 		&:after
 			@extend %pseudo-el-bl-abs
 			width: 100%
@@ -235,7 +236,6 @@ h2
 			color: $fontMiddle
 		
 	.bbFCItem
-		position: relative
 		&:after
 			@extend %pseudo-el-bl-abs
 			background-position: 0 center
@@ -258,4 +258,16 @@ h2
 		a
 			color: $fontLight
 			
+	.bbFeedbackSubscribe
+		form
+			border: solid 2px $fontLight
+		input
+			width: 85%
+			color: $fontLight
+			background-color: transparent
+		label
+			width: 15%
+			top: 0
+			right: 0
+			cursor: pointer
 
