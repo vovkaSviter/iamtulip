@@ -127,4 +127,14 @@ h2 {
 #bbOrder {
   background-color: #dddddd; }
 
+#bbServ img {
+  width: 100%; }
+#bbServ strong {
+  color: #000; }
+#bbServ a {
+  text-decoration: underline;
+  color: #000; }
+  #bbServ a:hover {
+    text-decoration: none; }
+
 /*# sourceMappingURL=style.css.map */
