@@ -198,11 +198,17 @@ h2
 			
 //	j. bbNews /////////////////////////////////////////////////////////////////////////////////
 #bbNews
-	.bbNewsItem
-		.caption
-			background-color: lighten($fontMiddle, 50%)
+	a
+		color: $fontMiddle
+		.linkImg
+			padding-top: 100%
+			@extend %backgr-img-center
+		.linkCaption
+			background-color:  lighten($fontMiddle, 50%)
+		h6
 			color: $fontDark
-		
+
+			
 #bbNewsArchiveButton
 	a
 		background-color: $fontLight

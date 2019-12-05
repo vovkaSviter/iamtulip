@@ -3,7 +3,7 @@
   display: block;
   position: absolute; }
 
-#bbGallery .gallItemRegular, #bbGallery .gallItemRegular:hover:after, #bbGallery .gallItemExtended {
+#bbGallery .gallItemRegular, #bbGallery .gallItemRegular:hover:after, #bbGallery .gallItemExtended, #bbNews a .linkImg {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat; }
@@ -140,9 +140,14 @@ h2 {
     #bbServ a:hover {
       text-decoration: none; }
 
-#bbNews .bbNewsItem .caption {
-  background-color: #dddddd;
-  color: #000; }
+#bbNews a {
+  color: #5d5d5d; }
+  #bbNews a .linkImg {
+    padding-top: 100%; }
+  #bbNews a .linkCaption {
+    background-color: #dddddd; }
+  #bbNews a h6 {
+    color: #000; }
 
 #bbNewsArchiveButton a {
   background-color: #fff;
