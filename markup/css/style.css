@@ -8,7 +8,7 @@
   background-size: contain;
   background-repeat: no-repeat; }
 
-#bbOrder, #bbMap {
+#bbHome, #bbOrder, #bbMap {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -24,10 +24,7 @@ input, textarea {
 
 #bbHome {
   color: #fff;
-  background-image: url("../imgs/bouquet.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain; }
+  background-image: url("../imgs/example1.jpg"); }
   #bbHome > .row {
     background-color: rgba(0, 0, 0, 0.5); }
     #bbHome > .row #bbHomeScrollButton {
