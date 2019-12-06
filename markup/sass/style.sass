@@ -44,7 +44,7 @@ body
 h2
 	color: $fontDark
 	
-input
+input, textarea
 	outline: none
 
 //	c. Home ///////////////////////////////////////////////////////////////////////////////////
@@ -183,7 +183,20 @@ input
 //	h. bbOrder ////////////////////////////////////////////////////////////////////////////////
 
 #bbOrder
-	background-color: lighten($fontMiddle, 50%)
+	@extend %backgr-img-center-cover
+	background-image: url("../imgs/order.jpg")
+	h2
+		color: $fontLight
+	input, textarea
+		background: transparent
+		border: solid 2px $fontMiddle
+		color: $fontLight
+		&::-webkit-input-placeholder
+			color: $fontLight
+		&:-ms-input-placeholder
+			color: $fontLight
+		&::placeholder
+			color: $fontLight
 	
 //	i. bbServ /////////////////////////////////////////////////////////////////////////////////
 
@@ -265,11 +278,17 @@ input
 			
 	.bbFeedbackSubscribe
 		form
-			border: solid 2px $fontLight
+			border: solid 2px $fontMiddle
 		input
 			width: 85%
-			color: $fontLight
 			background-color: transparent
+			&::-webkit-input-placeholder
+				color: $fontLight
+			&:-ms-input-placeholder
+				color: $fontLight
+			&::placeholder
+				color: $fontLight			
+			
 		label
 			width: 15%
 			top: 0
@@ -283,7 +302,7 @@ input
 	background-image: url("../imgs/map.jpg")
 
 
-//	m. bbFooter ////////////////////////////////////////////////////////////////////////////////
+//	m. bbFooter ///////////////////////////////////////////////////////////////////////////////
 #bbFooter
 	color: $fontLight
 	background-color: lighten($fontDark, 10%)
@@ -297,4 +316,3 @@ input
 	.bbFooterCopy
 		span
 			color: $fontMiddle
-

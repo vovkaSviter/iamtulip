@@ -8,7 +8,7 @@
   background-size: contain;
   background-repeat: no-repeat; }
 
-#bbMap {
+#bbOrder, #bbMap {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -19,7 +19,7 @@ body {
 h2 {
   color: #000; }
 
-input {
+input, textarea {
   outline: none; }
 
 #bbHome {
@@ -129,7 +129,19 @@ input {
     background-color: rgba(0, 0, 0, 0.5); }
 
 #bbOrder {
-  background-color: #dddddd; }
+  background-image: url("../imgs/order.jpg"); }
+  #bbOrder h2 {
+    color: #fff; }
+  #bbOrder input, #bbOrder textarea {
+    background: transparent;
+    border: solid 2px #5d5d5d;
+    color: #fff; }
+    #bbOrder input::-webkit-input-placeholder, #bbOrder textarea::-webkit-input-placeholder {
+      color: #fff; }
+    #bbOrder input:-ms-input-placeholder, #bbOrder textarea:-ms-input-placeholder {
+      color: #fff; }
+    #bbOrder input::placeholder, #bbOrder textarea::placeholder {
+      color: #fff; }
 
 #bbServ {
   background-color: #dddddd; }
@@ -189,11 +201,16 @@ input {
   #bbFeedback .bbFeedbackPages a {
     color: #fff; }
   #bbFeedback .bbFeedbackSubscribe form {
-    border: solid 2px #fff; }
+    border: solid 2px #5d5d5d; }
   #bbFeedback .bbFeedbackSubscribe input {
     width: 85%;
-    color: #fff;
     background-color: transparent; }
+    #bbFeedback .bbFeedbackSubscribe input::-webkit-input-placeholder {
+      color: #fff; }
+    #bbFeedback .bbFeedbackSubscribe input:-ms-input-placeholder {
+      color: #fff; }
+    #bbFeedback .bbFeedbackSubscribe input::placeholder {
+      color: #fff; }
   #bbFeedback .bbFeedbackSubscribe label {
     width: 15%;
     top: 0;
