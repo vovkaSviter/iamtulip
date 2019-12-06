@@ -56,7 +56,7 @@ input, textarea
 	background-size: contain
 	
 	>.row
-		background-color: rgba(0,0,0,.5)
+		background-color: rgba($fontDark,.5)
 	
 		#bbHomeScrollButton
 			cursor: pointer
@@ -70,7 +70,7 @@ input, textarea
 //	d. nav ////////////////////////////////////////////////////////////////////////////////////
 #navMain
 	color: $fontLight
-	background-color: rgba(0,0,0,.75)
+	background-color: rgba($fontDark,.75)
 	
 	a
 		color: $fontLight
@@ -121,7 +121,7 @@ input, textarea
 	top: 0
 	left: 0
 	display: none
-	background-color: rgba(0,0,0,.85)
+	background-color: rgba($fontDark,.85)
 	&.active
 		display: block
 	
@@ -184,7 +184,9 @@ input, textarea
 
 #bbOrder
 	@extend %backgr-img-center-cover
-	background-image: url("../imgs/order.jpg")
+	background-image: url("../imgs/example.jpg")
+	&>.row
+		background-color: rgba($fontDark, .75)
 	h2
 		color: $fontLight
 	input, textarea
@@ -197,6 +199,19 @@ input, textarea
 			color: $fontLight
 		&::placeholder
 			color: $fontLight
+
+#bbOrderButton
+	a
+		color: $fontDark
+		background-color: $fontLight
+		border: solid 1px $fontDark
+		&:hover
+			color: $fontLight
+			background-color: $fontDark
+			
+#bbOrderExtra
+	color: $fontMiddle
+
 	
 //	i. bbServ /////////////////////////////////////////////////////////////////////////////////
 

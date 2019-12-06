@@ -129,7 +129,9 @@ input, textarea {
     background-color: rgba(0, 0, 0, 0.5); }
 
 #bbOrder {
-  background-image: url("../imgs/order.jpg"); }
+  background-image: url("../imgs/example.jpg"); }
+  #bbOrder > .row {
+    background-color: rgba(0, 0, 0, 0.75); }
   #bbOrder h2 {
     color: #fff; }
   #bbOrder input, #bbOrder textarea {
@@ -142,6 +144,17 @@ input, textarea {
       color: #fff; }
     #bbOrder input::placeholder, #bbOrder textarea::placeholder {
       color: #fff; }
+
+#bbOrderButton a {
+  color: #000;
+  background-color: #fff;
+  border: solid 1px #000; }
+  #bbOrderButton a:hover {
+    color: #fff;
+    background-color: #000; }
+
+#bbOrderExtra {
+  color: #5d5d5d; }
 
 #bbServ {
   background-color: #dddddd; }

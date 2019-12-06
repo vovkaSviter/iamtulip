@@ -120,12 +120,12 @@
 		</div>
 	</section>
 	
-	<section id="bbOrder" class="container-fluid py-5">
+	<section id="bbOrder" class="container-fluid position-relative">
 		<div class="row">
 			<div class="container">
 				<div class="row">
-					<h2 class="col-12 text-uppercase text-center">Order</h2>
-					<form class="col-12">
+					<h2 class="col-12 text-uppercase text-center mt-5">Order</h2>
+					<form class="col-12 my-4">
 						<div class="row">
 							<div class="col-12 col-lg-6">
 								<input id="orderName" class="d-block w-100 mb-4 p-2" type="text" placeholder="Name*">
@@ -141,8 +141,18 @@
 								<textarea id="orderComments" rows="5" class="d-block col-12" placeholder="Special Notes"></textarea>
 							</div>
 							
+							<div id="bbOrderButton" class="col-12 text-center pt-4">
+								<a href="#" class="d-inline-block px-5 py-2 rounded-pill text-uppercase text-center text-decoration-none">
+									Order now
+								</a>
+							</div>							
 						</div>
 					</form>
+					
+					<h6 id="bbOrderExtra" class="col-12 text-center font-italic mb-5">
+						You can also call us for order <span>+0 123 456 7890</span>
+					</h6>
+					
 				</div>
 			</div>
 		</div>
@@ -213,7 +223,7 @@
 					</div>
 					
 					<div id="bbNewsArchiveButton" class="col-12 text-center">
-						<a class="d-inline-block mt-5 px-5 py-2 rounded-pill text-uppercase text-center text-decoration-none" href="#">archive</a>
+						<a href="#" class="d-inline-block mt-5 px-5 py-2 rounded-pill text-uppercase text-center text-decoration-none">archive</a>
 					</div>
 				</div>
 			</div>
