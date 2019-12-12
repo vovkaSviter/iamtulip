@@ -272,4 +272,7 @@ input, textarea {
   #bbFooter .bbFooterCopy span {
     color: #5d5d5d; }
 
+#exampleModal .modal-footer img {
+  cursor: pointer; }
+
 /*# sourceMappingURL=style.css.map */
