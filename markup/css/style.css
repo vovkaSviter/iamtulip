@@ -107,7 +107,10 @@ input, textarea {
 #bbPrices {
   background-color: #dddddd; }
   #bbPrices .bbPricesItem {
-    border-bottom: solid 1px #5d5d5d; }
+    border-bottom: solid 1px #5d5d5d;
+    opacity: 1; }
+    #bbPrices .bbPricesItem .itemCover {
+      opacity: 0; }
   #bbPrices .bbPricesImg img {
     width: 100%;
     height: auto; }
