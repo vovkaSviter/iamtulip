@@ -104,14 +104,16 @@
 		<div class="row">
 			<div class="container">
 				<div class="row">
-					<nav id="bbPricesNav" class="col-12 nav justify-content-center" role=""tablist>
-						<a id="all-tab" href="#all" data-toggle="tab" class="nav-link active lead" aria-controls="all" aria-selected="true">All</a>
-						<a id="tulips-tab" data-toggle="tab" href="#tulips" class="nav-link lead" aria-controls="tulips" aria-selected="false">Tulips</a>
-						<a id="roses-tab" data-toggle="tab" href="#roses" class="nav-link lead" aria-controls="roses" aria-selected="false">Roses</a>
-						<a id="bouquets-tab" data-toggle="tab" href="#bouquets" class="nav-link lead" aria-controls="bouquets" aria-selected="false">Bouquets</a>
+					<nav id="bbPricesNav" class="col-12 nav justify-content-center" role="tablist">
+						<a id="all-tab" href="#all" data-toggle="tab" class="nav-link active lead position-relative" aria-controls="all" aria-selected="true">All</a>
+						<a id="tulips-tab" data-toggle="tab" href="#tulips" class="nav-link lead position-relative" aria-controls="tulips" aria-selected="false">Tulips</a>
+						<a id="roses-tab" data-toggle="tab" href="#roses" class="nav-link lead position-relative" aria-controls="roses" aria-selected="false">Roses</a>
+						<a id="bouquets-tab" data-toggle="tab" href="#bouquets" class="nav-link lead position-relative" aria-controls="bouquets" aria-selected="false">Bouquets</a>
 					</nav>
 					
 					<div id="bbPricesContent" class="col-12 tab-content">
+					
+						<!--All-->
 						<div id="all" class="tab-pane active" role="tab-panel" area-labelledby="all-tab">
 							
 							<div class="row align-items-center py-3 position-relative bbPricesItem">
@@ -127,7 +129,7 @@
 									<span class="d-block">etc.</span>
 								</div>
 								
-								<a href="#" data-toggle="modal" data-target="#exampleModal" class="itemCover position-absolute w-100 h-100 d-flex justify-content-center align-items-center text-uppercase text-decoration-none">
+								<a href="#" data-toggle="modal" data-target="#exampleModal" class="itemCover position-absolute w-100 h-100 d-flex justify-content-center align-items-center text-uppercase text-decoration-none font-weight-bolder">
 									<span>more info ></span>								<!-- TODO: arrowRight icon -->
 								</a>
 								
@@ -146,7 +148,7 @@
 									<span class="d-block">extra info</span>
 								</div>
 								
-								<a href="#" data-toggle="modal" data-target="#exampleModal" class="itemCover position-absolute w-100 h-100 d-flex justify-content-center align-items-center text-uppercase text-decoration-none">
+								<a href="#" data-toggle="modal" data-target="#exampleModal" class="itemCover position-absolute w-100 h-100 d-flex justify-content-center align-items-center text-uppercase text-decoration-none font-weight-bolder">
 									<span>more info ></span>								<!-- TODO: arrowRight icon -->
 								</a>
 							</div>
@@ -163,7 +165,7 @@
 									$132.59
 								</div>
 								
-								<a href="#" data-toggle="modal" data-target="#exampleModal" class="itemCover position-absolute w-100 h-100 d-flex justify-content-center align-items-center text-uppercase text-decoration-none">
+								<a href="#" data-toggle="modal" data-target="#exampleModal" class="itemCover position-absolute w-100 h-100 d-flex justify-content-center align-items-center text-uppercase text-decoration-none font-weight-bolder">
 									<span>more info ></span>								<!-- TODO: arrowRight icon -->
 								</a>
 							</div>
@@ -181,7 +183,7 @@
 									<span class="d-block">cheapest</span>
 								</div>
 								
-								<a href="#" data-toggle="modal" data-target="#exampleModal" class="itemCover position-absolute w-100 h-100 d-flex justify-content-center align-items-center text-uppercase text-decoration-none">
+								<a href="#" data-toggle="modal" data-target="#exampleModal" class="itemCover position-absolute w-100 h-100 d-flex justify-content-center align-items-center text-uppercase text-decoration-none font-weight-bolder">
 									<span>more info ></span>								<!-- TODO: arrowRight icon -->
 								</a>
 							</div>
@@ -198,7 +200,7 @@
 									$80.25
 								</div>
 								
-								<a href="#" data-toggle="modal" data-target="#exampleModal" class="itemCover position-absolute w-100 h-100 d-flex justify-content-center align-items-center text-uppercase text-decoration-none">
+								<a href="#" data-toggle="modal" data-target="#exampleModal" class="itemCover position-absolute w-100 h-100 d-flex justify-content-center align-items-center text-uppercase text-decoration-none font-weight-bolder">
 									<span>more info ></span>								<!-- TODO: arrowRight icon -->
 								</a>
 							</div>
@@ -216,20 +218,127 @@
 									<span class="d-block">with yellow stuff</span>
 								</div>
 								
-								<a href="#" data-toggle="modal" data-target="#exampleModal" class="itemCover position-absolute w-100 h-100 d-flex justify-content-center align-items-center text-uppercase text-decoration-none">
+								<a href="#" data-toggle="modal" data-target="#exampleModal" class="itemCover position-absolute w-100 h-100 d-flex justify-content-center align-items-center text-uppercase text-decoration-none font-weight-bolder">
 									<span>more info ></span>								<!-- TODO: arrowRight icon -->
 								</a>
 							</div>
 							
 						</div>
+						
+						<!--Tulips-->
 						<div id="tulips" class="tab-pane" role="tab-panel" area-labelledby="tulips-tab">
-							tulips
+							<div class="row align-items-center py-3 position-relative bbPricesItem">
+								<div class="d-none d-lg-block col-lg-1 bbPricesImg">
+									<img src="imgs/prices.jpg">
+								</div>
+								<div class="col-10 col-lg-9 bbPricesHeading">
+									<p class="lead">Tulips, type first</p>
+									<p>Aenean at nibh felis</p>
+								</div>
+								<div class="col-2 bbPricesPrice text-right">
+									$25
+									<span class="d-block">etc.</span>
+								</div>
+								
+								<a href="#" data-toggle="modal" data-target="#exampleModal" class="itemCover position-absolute w-100 h-100 d-flex justify-content-center align-items-center text-uppercase text-decoration-none font-weight-bolder">
+									<span>more info ></span>								<!-- TODO: arrowRight icon -->
+								</a>
+								
+							</div>
+							
+							<div class="row align-items-center py-3 position-relative bbPricesItem">
+								<div class="d-none d-lg-block col-lg-1 bbPricesImg">
+									<img src="imgs/prices1.jpg">
+								</div>
+								<div class="col-10 col-lg-9 bbPricesHeading">
+									<p class="lead">Tulips, type second</p>
+									<p>Curabitur eget lectus ornare, tincidunt ex sit amet, pharetra dui</p>
+								</div>
+								<div class="col-2 bbPricesPrice text-right">
+									$25.57
+									<span class="d-block">extra info</span>
+								</div>
+								
+								<a href="#" data-toggle="modal" data-target="#exampleModal" class="itemCover position-absolute w-100 h-100 d-flex justify-content-center align-items-center text-uppercase text-decoration-none font-weight-bolder">
+									<span>more info ></span>								<!-- TODO: arrowRight icon -->
+								</a>
+							</div>
 						</div>
+						
+						<!--Roses-->
 						<div id="roses" class="tab-pane" role="tab-panel" area-labelledby="roses-tab">
-							roses
+							<div class="row align-items-center py-3 position-relative bbPricesItem">
+								<div class="d-none d-lg-block col-lg-1 bbPricesImg">
+									<img src="imgs/prices2.jpg">
+								</div>
+								<div class="col-10 col-lg-9 bbPricesHeading">
+									<p class="lead">Roses</p>
+									<p>Quisque quis ultrices ligula</p>
+								</div>
+								<div class="col-2 bbPricesPrice text-right">
+									$132.59
+								</div>
+								
+								<a href="#" data-toggle="modal" data-target="#exampleModal" class="itemCover position-absolute w-100 h-100 d-flex justify-content-center align-items-center text-uppercase text-decoration-none font-weight-bolder">
+									<span>more info ></span>								<!-- TODO: arrowRight icon -->
+								</a>
+							</div>
 						</div>
+						
+						<!--Bouquets-->
 						<div id="bouquets" class="tab-pane" role="tab-panel" area-labelledby="bouquets-tab">
-							bouquets
+							<div class="row align-items-center py-3 position-relative bbPricesItem">
+								<div class="d-none d-lg-block col-lg-1 bbPricesImg">
+									<img src="imgs/prices3.jpg">
+								</div>
+								<div class="col-10 col-lg-9 bbPricesHeading">
+									<p class="lead">Fourth item</p>
+									<p>Vestibulum commodo nisi eu eros tincidunt, id cursus turpis accumsan</p>
+								</div>
+								<div class="col-2 bbPricesPrice text-right">
+									$0.25
+									<span class="d-block">cheapest</span>
+								</div>
+								
+								<a href="#" data-toggle="modal" data-target="#exampleModal" class="itemCover position-absolute w-100 h-100 d-flex justify-content-center align-items-center text-uppercase text-decoration-none font-weight-bolder">
+									<span>more info ></span>								<!-- TODO: arrowRight icon -->
+								</a>
+							</div>
+							
+							<div class="row align-items-center py-3 position-relative bbPricesItem">
+								<div class="d-none d-lg-block col-lg-1 bbPricesImg">
+									<img src="imgs/prices4.jpg">
+								</div>
+								<div class="col-10 col-lg-9 bbPricesHeading">
+									<p class="lead">Fifth item</p>
+									<p>In in orci leo. Vestibulum egestas mauris turpis, vel congue velit hendrerit ut</p>
+								</div>
+								<div class="col-2 bbPricesPrice text-right">
+									$80.25
+								</div>
+								
+								<a href="#" data-toggle="modal" data-target="#exampleModal" class="itemCover position-absolute w-100 h-100 d-flex justify-content-center align-items-center text-uppercase text-decoration-none font-weight-bolder">
+									<span>more info ></span>								<!-- TODO: arrowRight icon -->
+								</a>
+							</div>
+							
+							<div class="row align-items-center py-3 position-relative bbPricesItem">
+								<div class="d-none d-lg-block col-lg-1 bbPricesImg">
+									<img src="imgs/prices5.jpg">
+								</div>
+								<div class="col-10 col-lg-9 bbPricesHeading">
+									<p class="lead">Yellow one</p>
+									<p>Phasellus eu pellentesque massa, et lobortis lectus</p>
+								</div>
+								<div class="col-2 bbPricesPrice text-right">
+									$40.99
+									<span class="d-block">with yellow stuff</span>
+								</div>
+								
+								<a href="#" data-toggle="modal" data-target="#exampleModal" class="itemCover position-absolute w-100 h-100 d-flex justify-content-center align-items-center text-uppercase text-decoration-none font-weight-bolder">
+									<span>more info ></span>								<!-- TODO: arrowRight icon -->
+								</a>
+							</div>
 						</div>
 					</div>
 					

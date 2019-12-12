@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #sandwich span[data-layer="outer"]:before, #sandwich span[data-layer="outer"]:after, #bbGallery .gallItemRegular:hover:after, #bbFeedback .bbFeedbackContacts:after, #bbFeedback .bbFeedbackPages:after, #bbFeedback .bbFeedbackSubscribe:after, #bbFeedback .bbFCItem:after {
   content: "";
   display: block;
@@ -12,6 +13,9 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
+
+#bbPricesNav a.active:after {
+  font-weight: 900; }
 
 body {
   color: #5d5d5d; }
@@ -110,10 +114,29 @@ input, textarea {
     border-bottom: solid 1px #5d5d5d;
     opacity: 1; }
     #bbPrices .bbPricesItem .itemCover {
-      opacity: 0; }
+      opacity: 0;
+      background-color: rgba(255, 255, 255, 0.5);
+      color: #000; }
   #bbPrices .bbPricesImg img {
     width: 100%;
     height: auto; }
+
+#bbPricesNav a {
+  color: #5d5d5d; }
+  #bbPricesNav a:hover {
+    color: #000; }
+  #bbPricesNav a.active {
+    color: #000; }
+    #bbPricesNav a.active:after {
+      content: "";
+      font-family: "Font Awesome 5 Free";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1rem;
+      text-align: center; }
 
 #bbGallery .gallItemRegular {
   padding-top: 50%;

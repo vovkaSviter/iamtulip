@@ -35,6 +35,9 @@ $fontLight: #fff
 	background-position: center
 	background-size: cover
 	background-repeat: no-repeat
+	
+%font-weight-900
+	font-weight: 900
 
 
 //	b. Common styles //////////////////////////////////////////////////////////////////////////
@@ -149,7 +152,7 @@ input, textarea
 //	f. bbPrices ///////////////////////////////////////////////////////////////////////////////
 
 #bbPrices
-	background-color: lighten($fontMiddle, 50%)
+	background-color: lighten($fontMiddle, 50%)	
 	
 	.bbPricesItem
 		border-bottom: solid 1px $fontMiddle
@@ -157,12 +160,33 @@ input, textarea
 		
 		.itemCover
 			opacity: 0
+			background-color: rgba($fontLight, .5)
+			color: $fontDark
 		
 	
 	.bbPricesImg
 		img
 			width: 100%
 			height: auto
+			
+#bbPricesNav
+		a
+			color: $fontMiddle
+			&:hover
+				color: $fontDark
+			&.active
+				color: $fontDark
+				&:after
+					@extend %font-weight-900
+					content: "\f0dd"
+					font-family: "Font Awesome 5 Free"
+					display: block
+					position: absolute
+					bottom: 0
+					left: 0
+					width: 100%
+					height: 1rem
+					text-align: center
 
 //	g. bbGall /////////////////////////////////////////////////////////////////////////////////
 
@@ -336,6 +360,7 @@ input, textarea
 	.bbFooterSocial
 		i
 			cursor: pointer
+			
 	#up
 		background-color: $fontMiddle
 	
