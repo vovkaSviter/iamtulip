@@ -40,9 +40,9 @@ $fontLight: #fff
 %font-weight-900
 	font-weight: 900
 
-%transition-05-ease-in
+%transition-025-ease-in
 	transition-timing-function: ease-in
-	transition-duration: .5s
+	transition-duration: .25s
 
 //	b. Common styles //////////////////////////////////////////////////////////////////////////
 body
@@ -66,11 +66,16 @@ input, textarea
 		#bbHomeScrollButton
 			cursor: pointer
 	
-	#bbHomeOrderButton a
-		display: inline-block
-		background-color: $fontLight
-		color: $fontDark
-		cursor: pointer
+	#bbHomeOrderButton
+		a
+			@extend %transition-025-ease-in
+			display: inline-block
+			background-color: $fontLight
+			color: $fontDark
+			cursor: pointer
+			&:hover
+				text-decoration: none
+				background-color: rgba($fontLight, .75)
 	
 //	d. nav ////////////////////////////////////////////////////////////////////////////////////
 #navMain
@@ -79,6 +84,7 @@ input, textarea
 	
 	a
 		color: $fontLight
+		@extend %transition-025-ease-in
 		&:hover
 			color: $fontMiddle
 		&.active
@@ -88,6 +94,7 @@ input, textarea
 	span[data-layer="outer"]
 		display: inline-block
 		width: 36px
+		cursor: pointer
 		&:before
 			@extend %pseudo-el-bl-abs
 			width: 100%
@@ -96,6 +103,7 @@ input, textarea
 			top: 0
 			right: 0
 			transform-origin: 100% 0
+			@extend %transition-025-ease-in
 		&:after
 			@extend %pseudo-el-bl-abs
 			width: 75%
@@ -104,6 +112,7 @@ input, textarea
 			bottom: 0
 			right: 0
 			transform-origin: 100% 100%
+			@extend %transition-025-ease-in
 		span
 			width: 50%
 			height: 1px
@@ -132,6 +141,7 @@ input, textarea
 	
 	a
 		color: $fontLight
+		@extend %transition-025-ease-in
 		&:hover
 			color: $fontMiddle
 
@@ -149,6 +159,7 @@ input, textarea
 		background-color: $fontLight
 		color: $fontDark
 		border: solid 1px $fontDark
+		@extend %transition-025-ease-in
 		&:hover
 			color: $fontLight
 			background-color: $fontDark
@@ -176,6 +187,7 @@ input, textarea
 #bbPricesNav
 		a
 			color: $fontMiddle
+			@extend %transition-025-ease-in
 			&:hover
 				color: $fontDark
 			&.active
@@ -244,10 +256,11 @@ input, textarea
 	a
 		color: $fontDark
 		background-color: $fontLight
-		border: solid 1px $fontDark
+		border: solid 1px $fontLight
+		@extend %transition-025-ease-in
 		&:hover
 			color: $fontLight
-			background-color: $fontDark
+			background-color: transparent
 			
 #bbOrderExtra
 	color: $fontMiddle
@@ -268,6 +281,9 @@ input, textarea
 	a
 		text-decoration: underline
 		color: $fontDark
+		@extend %transition-025-ease-in
+		&:hover
+			text-decoration: none
 			
 //	j. bbNews /////////////////////////////////////////////////////////////////////////////////
 #bbNews
@@ -284,7 +300,7 @@ input, textarea
 			
 #bbNewsArchiveButton
 	a
-		@extend %transition-05-ease-in
+		@extend %transition-025-ease-in
 		background-color: $fontLight
 		border: solid 1px $fontDark
 		color: $fontDark
@@ -336,6 +352,7 @@ input, textarea
 		form
 			border: solid 2px $fontMiddle
 		input
+			color: $fontLight
 			width: 85%
 			background-color: transparent
 			&::-webkit-input-placeholder
@@ -343,7 +360,7 @@ input, textarea
 			&:-ms-input-placeholder
 				color: $fontLight
 			&::placeholder
-				color: $fontLight			
+				color: $fontLight
 			
 		label
 			width: 15%
