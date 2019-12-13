@@ -7,10 +7,10 @@ function initPage(){
 		var items = $('.bbPricesItem');
 		
 		items.mouseenter(function(){
-			$('.itemCover', this).css('opacity','1');
+			$('.itemCover', this).animate({opacity : 1} , {duration : 250, easing: 'swing', queue: false});
 		}).mouseleave(function(){
-			$('.itemCover', this).css('opacity','0');
-		});		
+			$('.itemCover', this).animate({'opacity' : '0'}, 250, 'swing');
+		});	
 		
 	};
 	bbPricesItemModal();
