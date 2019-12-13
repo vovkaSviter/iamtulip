@@ -17,6 +17,10 @@
 #bbPricesNav a.active:after {
   font-weight: 900; }
 
+#bbNewsArchiveButton a {
+  transition-timing-function: ease-in;
+  transition-duration: 0.5s; }
+
 body {
   color: #5d5d5d; }
 

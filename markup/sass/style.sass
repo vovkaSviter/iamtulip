@@ -40,6 +40,9 @@ $fontLight: #fff
 %font-weight-900
 	font-weight: 900
 
+%transition-05-ease-in
+	transition-timing-function: ease-in
+	transition-duration: .5s
 
 //	b. Common styles //////////////////////////////////////////////////////////////////////////
 body
@@ -281,6 +284,7 @@ input, textarea
 			
 #bbNewsArchiveButton
 	a
+		@extend %transition-05-ease-in
 		background-color: $fontLight
 		border: solid 1px $fontDark
 		color: $fontDark
