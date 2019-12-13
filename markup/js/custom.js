@@ -15,6 +15,24 @@ function initPage(){
 	};
 	bbPricesItemModal();
 	
+	function xsMenu(){
+		var trigger = $('#navXSTrigger');
+		var navXS = $('#navXS');
+		var navXSLinks = navXS.find('a');
+		
+		trigger.click(function(){
+			$(this).toggleClass('active');
+			navXS.toggleClass('active');
+		});
+		
+		navXSLinks.click(function(){
+			trigger.toggleClass('active');
+			navXS.toggleClass('active');
+		});
+		
+	};
+	xsMenu();
+	
 	
 	console.log('ooops! into your mouth :/');
 	
