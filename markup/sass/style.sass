@@ -421,10 +421,11 @@ input, textarea
 #singlePageArticle
 	padding-top: 6rem
 	padding-bottom: 3rem
-	.imageContainer
-		@extend %backgr-img-center-cover
-		background-image: url("../imgs/singlePage.jpg")
-		padding-top: 25%
+	
+.imageContainer
+	@extend %backgr-img-center-cover
+	background-image: url("../imgs/singlePage.jpg")
+	padding-top: 35%
 
 .articleTag
 	color: $fontDark
@@ -434,6 +435,18 @@ input, textarea
 		color: $fontMiddle
 		border-color: $fontMiddle
 
-
+#catMainContent
+	padding-top: 5rem
+	padding-bottom: 3rem
+	
+	h1 span
+		color: lighten($fontMiddle, 50%)
+		
+	a
+		color: $fontMiddle
+	
+	article:not(:last-child)
+		border-bottom: solid 1px $fontMiddle
+		
 
 

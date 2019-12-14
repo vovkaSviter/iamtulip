@@ -9,7 +9,7 @@
   background-size: contain;
   background-repeat: no-repeat; }
 
-#bbHome, #bbOrder, #bbMap, #singlePageArticle .imageContainer {
+#bbHome, #bbOrder, #bbMap, .imageContainer {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -301,9 +301,10 @@ input, textarea {
 #singlePageArticle {
   padding-top: 6rem;
   padding-bottom: 3rem; }
-  #singlePageArticle .imageContainer {
-    background-image: url("../imgs/singlePage.jpg");
-    padding-top: 25%; }
+
+.imageContainer {
+  background-image: url("../imgs/singlePage.jpg");
+  padding-top: 35%; }
 
 .articleTag {
   color: #000;
@@ -311,5 +312,15 @@ input, textarea {
   .articleTag:hover {
     color: #5d5d5d;
     border-color: #5d5d5d; }
+
+#catMainContent {
+  padding-top: 5rem;
+  padding-bottom: 3rem; }
+  #catMainContent h1 span {
+    color: #dddddd; }
+  #catMainContent a {
+    color: #5d5d5d; }
+  #catMainContent article:not(:last-child) {
+    border-bottom: solid 1px #5d5d5d; }
 
 /*# sourceMappingURL=style.css.map */
