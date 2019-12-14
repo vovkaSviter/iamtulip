@@ -14,6 +14,7 @@
 //	l. bbMap
 //	m. bbFooter
 //	n. modal
+//	o. 404
 
 
 
@@ -47,9 +48,11 @@ $fontLight: #fff
 //	b. Common styles //////////////////////////////////////////////////////////////////////////
 body
 	color: $fontMiddle
+	-ms-user-select: none
+	user-select: none
 	
-h2
-	color: $fontDark
+	h2
+		color: $fontDark
 	
 input, textarea
 	outline: none
@@ -397,3 +400,17 @@ input, textarea
 	.modal-footer
 		img
 			cursor: pointer
+			
+//	o. 404 ////////////////////////////////////////////////////////////////////////////////////
+#page404
+	background-color: lighten($fontMiddle, 50%)
+	h1
+		font-size: 10rem
+		line-height: 12rem
+	h2
+		color: $fontDark
+	
+	.fixed-bottom
+		a
+			text-decoration: underline
+			color: $fontDark
