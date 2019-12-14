@@ -331,4 +331,9 @@ input, textarea {
     color: #fff;
     background-color: #000; }
 
+.asideItem h4 {
+  background-color: #dddddd; }
+.asideItem ul li {
+  border-bottom: solid 1px #dddddd; }
+
 /*# sourceMappingURL=style.css.map */
