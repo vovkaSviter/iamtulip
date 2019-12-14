@@ -9,7 +9,7 @@
   background-size: contain;
   background-repeat: no-repeat; }
 
-#bbHome, #bbOrder, #bbMap {
+#bbHome, #bbOrder, #bbMap, #singlePageArticle .imageContainer {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -17,7 +17,7 @@
 #bbPricesNav a.active:after {
   font-weight: 900; }
 
-#bbHome #bbHomeOrderButton a, #navMain a, #sandwich span[data-layer="outer"]:before, #sandwich span[data-layer="outer"]:after, #navXS a, #aboutDescr a, #bbPricesNav a, #bbOrderButton a, #bbServ a, #bbNewsArchiveButton a {
+#bbHome #bbHomeOrderButton a, #navMain a, #sandwich span[data-layer="outer"]:before, #sandwich span[data-layer="outer"]:after, #navXS a, #aboutDescr a, #bbPricesNav a, #bbOrderButton a, #bbServ a, #bbNewsArchiveButton a, .articleTag {
   transition-timing-function: ease-in;
   transition-duration: 0.25s; }
 
@@ -276,7 +276,7 @@ input, textarea {
 
 #bbFooter {
   color: #fff;
-  background-color: #1a1a1a; }
+  background-color: #000; }
   #bbFooter .bbFooterSocial i {
     cursor: pointer; }
   #bbFooter #up {
@@ -297,5 +297,19 @@ input, textarea {
   #page404 .fixed-bottom a {
     text-decoration: underline;
     color: #000; }
+
+#singlePageArticle {
+  padding-top: 6rem;
+  padding-bottom: 3rem; }
+  #singlePageArticle .imageContainer {
+    background-image: url("../imgs/singlePage.jpg");
+    padding-top: 25%; }
+
+.articleTag {
+  color: #000;
+  border: solid 1px #000; }
+  .articleTag:hover {
+    color: #5d5d5d;
+    border-color: #5d5d5d; }
 
 /*# sourceMappingURL=style.css.map */

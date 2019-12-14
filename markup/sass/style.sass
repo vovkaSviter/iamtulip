@@ -15,6 +15,7 @@
 //	m. bbFooter
 //	n. modal
 //	o. 404
+//	p. pageSingle
 
 
 
@@ -381,7 +382,7 @@ input, textarea
 //	m. bbFooter ///////////////////////////////////////////////////////////////////////////////
 #bbFooter
 	color: $fontLight
-	background-color: lighten($fontDark, 10%)
+	background-color: $fontDark
 	
 	.bbFooterSocial
 		i
@@ -414,3 +415,25 @@ input, textarea
 		a
 			text-decoration: underline
 			color: $fontDark
+			
+
+//	p. pageSingle /////////////////////////////////////////////////////////////////////////////
+#singlePageArticle
+	padding-top: 6rem
+	padding-bottom: 3rem
+	.imageContainer
+		@extend %backgr-img-center-cover
+		background-image: url("../imgs/singlePage.jpg")
+		padding-top: 25%
+
+.articleTag
+	color: $fontDark
+	border: solid 1px $fontDark
+	@extend %transition-025-ease-in
+	&:hover
+		color: $fontMiddle
+		border-color: $fontMiddle
+
+
+
+
