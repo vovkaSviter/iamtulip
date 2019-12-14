@@ -17,7 +17,7 @@
 #bbPricesNav a.active:after {
   font-weight: 900; }
 
-#bbHome #bbHomeOrderButton a, #navMain a, #sandwich span[data-layer="outer"]:before, #sandwich span[data-layer="outer"]:after, #navXS a, #aboutDescr a, #bbPricesNav a, #bbOrderButton a, #bbServ a, #bbNewsArchiveButton a, .articleTag {
+#bbHome #bbHomeOrderButton a, #navMain a, #sandwich span[data-layer="outer"]:before, #sandwich span[data-layer="outer"]:after, #navXS a, #aboutDescr a, #bbPricesNav a, #bbOrderButton a, #bbServ a, #bbNewsArchiveButton a, .articleTag, #navBTNRight {
   transition-timing-function: ease-in;
   transition-duration: 0.25s; }
 
@@ -322,5 +322,13 @@ input, textarea {
     color: #5d5d5d; }
   #catMainContent article:not(:last-child) {
     border-bottom: solid 1px #5d5d5d; }
+
+#navBTNRight {
+  color: #000;
+  background-color: #fff;
+  border: solid 1px #000; }
+  #navBTNRight:hover {
+    color: #fff;
+    background-color: #000; }
 
 /*# sourceMappingURL=style.css.map */
