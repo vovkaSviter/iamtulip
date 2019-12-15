@@ -463,7 +463,16 @@ input, textarea
 	ul
 		li
 			border-bottom: solid 1px lighten($fontMiddle, 50%)
-		
+
+.themeThumbnail
+	@extend %transition-025-ease-in
+	&:hover
+		opacity: .75
+	
+	.imageContainer
+		width: 35%
+	.themeThumbnailDescr
+		width: 60%
 		
 		
 		

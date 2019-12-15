@@ -17,7 +17,7 @@
 #bbPricesNav a.active:after {
   font-weight: 900; }
 
-#bbHome #bbHomeOrderButton a, #navMain a, #sandwich span[data-layer="outer"]:before, #sandwich span[data-layer="outer"]:after, #navXS a, #aboutDescr a, #bbPricesNav a, #bbOrderButton a, #bbServ a, #bbNewsArchiveButton a, .articleTag, #navBTNRight {
+#bbHome #bbHomeOrderButton a, #navMain a, #sandwich span[data-layer="outer"]:before, #sandwich span[data-layer="outer"]:after, #navXS a, #aboutDescr a, #bbPricesNav a, #bbOrderButton a, #bbServ a, #bbNewsArchiveButton a, .articleTag, #navBTNRight, .themeThumbnail {
   transition-timing-function: ease-in;
   transition-duration: 0.25s; }
 
@@ -335,5 +335,12 @@ input, textarea {
   background-color: #dddddd; }
 .asideItem ul li {
   border-bottom: solid 1px #dddddd; }
+
+.themeThumbnail:hover {
+  opacity: 0.75; }
+.themeThumbnail .imageContainer {
+  width: 35%; }
+.themeThumbnail .themeThumbnailDescr {
+  width: 60%; }
 
 /*# sourceMappingURL=style.css.map */
